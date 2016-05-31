@@ -1,9 +1,19 @@
-;;; g-preludes.el --- Emacs Prelude: Personal tweaks
+;;; misc.el --- Emacs Prelude: Miscellaneous tweaks
 ;;
 ;;; Commentary:
 ;; Personal tweaks of the Prelude provided functionality
 
 ;;; Code:
+
+;; Set command as meta
+(setq mac-command-modifier 'meta)
+
+;; Set default font
+;; Use this instead of set-default-font so that daemon loads it
+(setq default-frame-alist '((font . "Source Code Pro-12")))
+
+;; Start with maximized windows
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ;; Disable flyspell-mode
 ;; I'm not fond of spell checking on the fly!
@@ -21,3 +31,5 @@
 
 (setq interprogram-cut-function 'paste-to-osx)
 (setq interprogram-paste-function 'copy-from-osx)
+
+;;; misc.el ends here

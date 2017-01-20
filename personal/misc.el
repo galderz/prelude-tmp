@@ -32,4 +32,7 @@
 (setq interprogram-cut-function 'paste-to-osx)
 (setq interprogram-paste-function 'copy-from-osx)
 
+;; Rebind moving between frames
+(global-set-key (kbd "M-`") 'other-frame)
+
 ;;; misc.el ends here

@@ -5,7 +5,8 @@
 
 ;;; Code:
 
-;; Compile stack based projects
-(setq haskell-compile-cabal-build-command "stack build")
+;; Install Intero
+(package-install 'intero)
+(add-hook 'haskell-mode-hook 'intero-mode)
 
 ;;; haskell.el ends here

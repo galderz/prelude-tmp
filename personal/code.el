@@ -18,4 +18,13 @@
 ;; Disable automatic indentation
 (electric-indent-mode 0)
 
+;; Haskell indentation
+(setq-default haskell-indent-spaces 4)
+(setq-default haskell-indentation-layout-offset 4)
+(setq-default haskell-indentation-starter-offset 4)
+(setq-default haskell-indentation-left-offset 4)
+(setq-default haskell-indentation-ifte-offset 4)
+(setq-default haskell-indentation-where-pre-offset 4)
+(setq-default haskell-indentation-where-post-offset 4)
+
 ;;; code.el ends here
